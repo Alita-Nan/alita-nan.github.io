@@ -21,7 +21,7 @@
 
 我遇到的第一个坑是在教程的第三部分。
 
-{{< figure src="/Docker-Directory" title=docker教程目录" >}}
+{{< figure src="/Docker-Directory.JPG" title="docker教程目录" >}}
 
 这个章节的主题是***Our Application***。教程在给出一个与既定程序匹配的***dockerfile***后会引导你用
 
@@ -55,7 +55,9 @@
 
 `sh -c "yarn install && yarn run dev"`
 
+
 * `-w /app`的意义在于指定命令针对的工作的目录。(原文是：***sets the "working directory" or the current directory that the command will run from***)
+
 
 * `-v "$(pwd):/app"`的意思是将主机中的容器内的当前目录绑定到/app的工作目录下。（原文是：***bind mount the current directory from the host in the container into the/app directory***)
 
