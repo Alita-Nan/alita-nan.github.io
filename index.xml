@@ -4,9 +4,16 @@
         <link>http://example.org/</link>
         <description>这是我的全新 Hugo 网站</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>Athena_Alita@outlook.com (楠)</managingEditor>
-            <webMaster>Athena_Alita@outlook.com (楠)</webMaster><lastBuildDate>Sun, 27 Jun 2021 22:04:14 &#43;0800</lastBuildDate>
+            <webMaster>Athena_Alita@outlook.com (楠)</webMaster><lastBuildDate>Tue, 29 Jun 2021 16:30:26 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>关于Docker的踩坑</title>
+    <link>http://example.org/%E5%85%B3%E4%BA%8Edocker%E7%9A%84%E8%B8%A9%E5%9D%91/</link>
+    <pubDate>Tue, 29 Jun 2021 16:30:26 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/%E5%85%B3%E4%BA%8Edocker%E7%9A%84%E8%B8%A9%E5%9D%91/</guid>
+    <description><![CDATA[Before 关于Docker的学习我是在官方给出的入门教程中进行的。我非常推荐新手跟着官方给出的教程学习。 一是质量有得保证。二是官方推出的入门教程较其]]></description>
+</item><item>
     <title>Visit_foreign_websites</title>
     <link>http://example.org/visit_foreign_websites/</link>
     <pubDate>Sun, 27 Jun 2021 22:04:14 &#43;0800</pubDate>
