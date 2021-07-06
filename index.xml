@@ -2,11 +2,18 @@
     <channel>
         <title>我的全新 Hugo 网站</title>
         <link>http://example.org/</link>
-        <description>这是我的全新 Hugo 网站</description>
+        <description>Wecome！</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>Athena_Alita@outlook.com (楠)</managingEditor>
-            <webMaster>Athena_Alita@outlook.com (楠)</webMaster><lastBuildDate>Tue, 29 Jun 2021 16:30:26 &#43;0800</lastBuildDate>
+            <webMaster>Athena_Alita@outlook.com (楠)</webMaster><lastBuildDate>Tue, 06 Jul 2021 16:56:37 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Operating System</title>
+    <link>http://example.org/operating-system/</link>
+    <pubDate>Tue, 06 Jul 2021 16:56:37 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/operating-system/</guid>
+    <description><![CDATA[Leraning Operating System 一、写在前面： ​ 我计划在这个暑假学习有关操作系统的知识。在查阅了有关的资料后我打算跟随书籍进行学习。我选择的书籍是国外的教材的译本，原]]></description>
+</item><item>
     <title>关于Docker的踩坑</title>
     <link>http://example.org/%E5%85%B3%E4%BA%8Edocker%E7%9A%84%E8%B8%A9%E5%9D%91/</link>
     <pubDate>Tue, 29 Jun 2021 16:30:26 &#43;0800</pubDate>
