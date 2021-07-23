@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "http:\/\/example.org\/%E6%9C%89%E5%85%B3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F\/"
-        },"genre": "posts","wordcount":  1490 ,
+        },"genre": "posts","wordcount":  1486 ,
         "url": "http:\/\/example.org\/%E6%9C%89%E5%85%B3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F\/","datePublished": "2021-07-11T03:29:55+08:00","dateModified": "2021-07-11T03:29:55+08:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -120,7 +120,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">有关操作系统的第一个程序</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>楠</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-11">2021-07-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1490 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-07-11">2021-07-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1486 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;<span id="/%E6%9C%89%E5%85%B3%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/" class="leancloud_visitors" data-flag-title="有关操作系统的第一个程序">
                         <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;次阅读
                     </span>&nbsp;</div>
@@ -131,34 +131,16 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#before">Before</a></li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li>
-          <ul>
-            <li>
-              <ul>
-                <li>
-                  <ul>
-                    <li><a href="#首先我们来看一下23题">首先我们来看一下2、3题。</a></li>
-                    <li><a href="#接下来我们来看一下67题">接下来我们来看一下6、7题。</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
+    <li><a href="#一书的大致逻辑">一、书的大致逻辑</a></li>
+    <li><a href="#二-书中给出的程序">二、 书中给出的程序</a></li>
+    <li><a href="#三运行结果与结论">三、运行结果与结论</a></li>
+    <li><a href="#四总结">四、总结</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h1 id="heading"></h1>
-<h2 id="before">Before</h2>
+<h1 id="before">Before</h1>
 <p>​	这两天回到家之后便因为一些琐事中断了学习。果然还是和我预料的一样，得呆在学校那种环境下才能静得下来。虽然如此，但是在前几天的学习中我的收获还是颇为丰富。这本书在不断细化和深入的过程也会用程序来直观的让读者感受操作系统。这次的笔记也是源自于书中第四章——抽象：进程。</p>
-<h1 id="一书的大致逻辑">一、书的大致逻辑</h1>
+<h2 id="一书的大致逻辑">一、书的大致逻辑</h2>
 <blockquote>
 <p>虚拟化技术 -&gt; 如何模拟出尽可能多的CPU从而同时执行尽可能多的任务（进程）？ -&gt; 抽象需要执行的<strong>任务</strong> 	-&gt; 引出了进程的概念</p>
 </blockquote>
@@ -168,7 +150,7 @@
 </ul>
 <p>​	先让我们来回顾一下小学接触过的数学题：假设洗漱要10分钟，榨汁机榨果汁要5分钟，煮开水要7分钟。请问完成这三件事最短的时间是多少（榨汁和煮水的前置工作的时间不计）？显然的，答案是10分钟。因为你可以在启动榨汁机和煮水壶之后再去洗漱。我们换个角度，把你看成一块CPU，这三件事情都是用户需要执行的不同<strong>任务</strong>。CPU也和你一样不会线性的、耐心的依次等待三个任务的完成。而是会选择最佳的策略在尽可能短的时间内去同时完成这三件任务。所以这要求你必须能在任何时刻都能清点”进程“在执行过程中访问或影响系统的不同部分（就像你能知道水是否烧开了，热水壶放置在哪个地方等等……）</p>
 <p>​	关于书上对进程API的介绍（如进程的创建、销毁、暂停等），在此处就不过多赘述了。</p>
-<h1 id="二-书中给出的程序">二、 书中给出的程序</h1>
+<h2 id="二-书中给出的程序">二、 书中给出的程序</h2>
 <p>​	书中给出的习题是运行给定的程序并根据所学知识和提示回答。下面是本章给出的习题：</p>
 <p><img
         class="lazyload"
@@ -188,23 +170,23 @@
         title="Test_Four_2" /></p>
 <ul>
 <li>
-<p><strong>如果你对给出的程序感兴趣的话可以到下面的连接拉取（本次的程序在<em>cpu-intro</em></strong>文件夹下）</p>
+<p>如果你对给出的程序感兴趣的话可以到下面的连接拉取（本次的程序在cpu-intro文件夹下）</p>
 </li>
 <li>
-<p>**如果你没梯子的话那么可以将连接中的github.com替换成：**<em><strong>github.com.cnpmjs.org</strong></em></p>
+<p>如果你没梯子的话那么可以将连接中的<em>github.com</em>替换成：<em>github.com.cnpmjs.org</em></p>
 </li>
 <li>
-<p><strong>本程序的运行需要你有python的编译环境。</strong></p>
+<p>本程序的运行需要你有<strong>python</strong>的编译环境。</p>
 <blockquote>
 <p><a href="https://github.com/remzi-arpacidusseau/ostep-homework/">https://github.com/remzi-arpacidusseau/ostep-homework/</a></p>
 </blockquote>
 </li>
 </ul>
-<h1 id="三运行结果与结论">三、运行结果与结论</h1>
+<h2 id="三运行结果与结论">三、运行结果与结论</h2>
 <blockquote>
 <p>这里先明确运行的指令和参数：5:100表示的是一个需要5个单位时间且运行时要占用cpu 100%的资源的程序。相反的，3:0表示的是需要花费1个单位时间且这个时间通常花费在发起请求上，但在处理过程中不耗费cpu资源的程序（例如IO的处理，且io的处理默认花费5个单位时长）</p>
 </blockquote>
-<h6 id="首先我们来看一下23题">首先我们来看一下2、3题。</h6>
+<p><strong>首先我们来看一下2、3题。</strong></p>
 <blockquote>
 <p>题目的要求翻译一下就是要执行一个占用cpu百分之一百的资源且需要4个单位时间才能完成的程序和一个io程序。区别只是执行的顺序不同。</p>
 </blockquote>
@@ -224,7 +206,7 @@
 <ul>
 <li>可以看到虽然要执行的都是相同的任务，但是花费的时间却有所不同。原因在于处理IO程序时cpu并不需要参与其中。就像我们在前面提到的数学题中的烧水一样。你只需要按下开关，水壶便会自动加水和加热。这个过程你可以去处理其他的事情。<strong>所以cpu的一个执行策略便是在等待io时切换到另一个进程继续处理。</strong></li>
 </ul>
-<h6 id="接下来我们来看一下67题">接下来我们来看一下6、7题。</h6>
+<p><strong>接下来我们来看一下6、7题。</strong></p>
 <blockquote>
 <p>为了便于展示这里我们只运行两个 5:100的程序。指令中的参数在题目中均有介绍，此处便不过多赘述。</p>
 </blockquote>
@@ -244,7 +226,7 @@
 <ul>
 <li>这里的思路是和上面的2、3题的思路相似。区别就是指令中的两个参数能够让cpu的处理时先发出等待中的io程序，然后切换到其他进程运行，借此缩短运行时间。</li>
 </ul>
-<h1 id="四总结">四、总结</h1>
+<h2 id="四总结">四、总结</h2>
 <p>通过上述的题目，我们可以看到操作系统在处理进程时必须给出一套执行策略供cpu运行以在有限的范围内缩短运行时间，为此我们抽象出了进程这一概念。让cpu在”烧水“的同时洗漱。</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
